@@ -1,18 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
 
     <TextView
+        android:id="@+id/headText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/head_text"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textAllCaps="true"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_marginTop="18dp"/>
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="#000"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="80sp"
+        android:layout_marginTop="-30dp"
+        />
+
+    <TextView
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#000"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/usernameText"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="80sp"/>
+
+    <EditText
+        android:id="@+id/usernameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="@color/colorAccent"
+        android:shadowColor="@color/colorAccent"
+        android:autofillHints="Username"
+        android:width="200sp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="200sp"/>
+
+    <EditText
+        android:id="@+id/passwordEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:autofillHints="Password"
+        android:textColor="@color/colorPrimary"
+        android:shadowColor="@color/colorPrimary"
+        android:width="200sp"
+        android:layout_below="@+id/usernameEdit"
+        android:layout_marginStart="200sp"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/passwordEdit"
+        android:layout_marginTop="40sp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
