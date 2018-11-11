@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_USERNAME = "me.skrilltrax.intents.EXTRA_USERNAME";
     public static final String EXTRA_PASSWORD = "me.skrilltrax.intents.EXTRA_PASSWORD";
     public static final int REQUEST_CLICK = 1;
+    private static final int REQUEST_IMAGE_CAPTURE = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,16 +48,53 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        final Intent cameraIntent = new Intent();
+        cameraIntent.setAction(Intent.ACTION_SEND);
+        cameraIntent.putExtra(Intent.EXTRA_TEXT, "YOOOOOO");
+        cameraIntent.setType("text/plain");
+        String title = "Share With";
+        final Intent chooser = Intent.createChooser(cameraIntent, title);
+
+
+        Button cameraButton = findViewById(R.id.cameraButton);
+
+        cameraButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (cameraIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivityForResult(chooser,REQUEST_IMAGE_CAPTURE);
+                } else {
+                    Toast.makeText(getApplicationContext(),"Not Working", Toast.LENGTH_SHORT)
+                            .show();
+                }
+            }
+        });
+
+        final Intent third = new Intent(this, thirdActivity.class);
+
+        final Button thirdActivity = findViewById(R.id.thirdActivity);
+        thirdActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(third);
+            }
+        });
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_CLICK) {
-            if (resultCode == RESULT_OK) {
-                String reply = data.getData().toString();
+            if (resultCode == RESULT_OK && data !=null) {
+                String reply = (data.getData() != null ) ? data.getData().toString() : null;
                 Toast.makeText(getApplicationContext(),reply,Toast.LENGTH_LONG).show();
             }
         }
+
+//        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+//            Bundle extras = data.getExtras();
+//            Bitmap imageBitmap = (Bitmap) extras.get("data");
+//        }
     }
 }

@@ -3,8 +3,9 @@ package me.skrilltrax.intents;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -51,6 +52,8 @@ public class secondActivity extends AppCompatActivity {
 
         secondLayout.addView(backButton,buttonParams);
         backButton.setText("BACK");
+
+        Snackbar.make(findViewById(backButton.getId()),"Hello", Snackbar.LENGTH_SHORT).show();
 
         final Intent returnIntent = new Intent();
 

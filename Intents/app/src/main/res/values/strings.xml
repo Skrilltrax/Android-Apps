@@ -2,4 +2,12 @@
     <string name="app_name">Intents</string>
     <string name="head_textview">Intents</string>
     <string name="head_text">Intents</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="username_edit">Username</string>
+    <string name="password_edit">Password</string>
+    <string name="login">Login</string>
+    <string name="camera">Camera</string>
+    <string name="title_activity_third">thirdActivity</string>
+    <string name="thirdActivity">Third</string>
 </resources>
