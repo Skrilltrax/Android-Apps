@@ -1,7 +1,5 @@
 package me.skrilltrax.fragments;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -14,8 +12,8 @@ import android.view.ViewGroup;
 
 public class BottomFragment extends Fragment {
 
-    private static TextView topText;
-    private static TextView bottomText;
+    private TextView topText;
+    private TextView bottomText;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

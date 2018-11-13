@@ -1,8 +1,6 @@
 package me.skrilltrax.fragments;
 
-import android.app.Activity;
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -17,12 +15,12 @@ import android.widget.TextView;
 
 public class Top extends Fragment {
 
-    private static EditText editTextTop;
-    private static EditText editTextBottom;
-    private static TextView textView;
+    private EditText editTextTop;
+    private EditText editTextBottom;
+    private TextView textView;
 
     public interface TopSectionListener {
-        public void createMeme(String top, String bottom);
+        void createMeme(String top, String bottom);
     }
 
     TopSectionListener activityCommander;
