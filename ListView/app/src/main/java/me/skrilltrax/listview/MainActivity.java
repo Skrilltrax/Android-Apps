@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -15,15 +15,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String[] stuff = new String[30];
+        String[] names = new String[26];
+        for (int i = 0; i < 26; i++)
+        {
+            names[i] = String.valueOf((char) (i + 65));
+        }
 
-        for (int i = 0 ; i < 30; i++)
-            stuff[i] = String.valueOf(i);
-        ArrayAdapter<String> stuffAdapter = new ArrayAdapter<String>(
-                this,android.R.layout.simple_list_item_1, stuff);
+        ListAdapter customAdapter = new CustomAdapter(this, R.layout.custom_list_view, names);
 
         ListView myListView = findViewById(R.id.listView);
-        myListView.setAdapter(stuffAdapter);
+        myListView.setAdapter(customAdapter);
 
         myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
