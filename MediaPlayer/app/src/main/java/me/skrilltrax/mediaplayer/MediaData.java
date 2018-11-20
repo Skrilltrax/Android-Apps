@@ -2,7 +2,9 @@ package me.skrilltrax.mediaplayer;
 
 import android.content.ContentResolver;
 import android.database.Cursor;
+import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.provider.MediaStore;
 import android.content.Context;
 import android.util.Log;
@@ -17,6 +19,7 @@ public class MediaData {
     private long mediaID;
     private String mediaTitle;
     private String mediaPath;
+    private Bitmap mediaThumb;
 
     String[] projection = {
             MediaStore.Video.Media._ID,
@@ -28,6 +31,7 @@ public class MediaData {
         this.mediaID = mediaID;
         this.mediaTitle = mediaTitle;
         this.mediaPath = mediaPath;
+//        this.mediaThumb = mediaThumb;
     }
 
     public MediaData() {
@@ -46,12 +50,16 @@ public class MediaData {
         return mediaPath;
     }
 
+    public Bitmap getMediaThumb() { return mediaThumb; }
+
     public ArrayList<MediaData> getMediaInfo(Context context) {
 
         ArrayList<MediaData> arrayList = new ArrayList<>();
         ContentResolver contentResolver = context.getContentResolver();
         Uri mediaUri = MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
         Cursor mediaCursor = contentResolver.query(mediaUri, projection, null, null, MediaStore.Video.Media.DEFAULT_SORT_ORDER);
+
+        Bitmap previewImage;
 
         if(mediaCursor != null && mediaCursor.moveToFirst())
         {
@@ -63,6 +71,10 @@ public class MediaData {
                 long currentId = mediaCursor.getLong(mediaId);
                 String currentTitle = mediaCursor.getString(mediaTitle);
                 String currentPath = mediaCursor.getString(mediaPath);
+//                previewImage = MediaStore.Video.Thumbnails.getThumbnail(contentResolver, currentId, MediaStore.Video.Thumbnails.MICRO_KIND, null);
+//                Log.e(TAG,"Got thumbnail");
+//                arrayList.add(new MediaData(currentId, currentTitle, currentPath, previewImage));
+                if (currentPath.contains("WhatsApp"));
                 arrayList.add(new MediaData(currentId, currentTitle, currentPath));
                 Log.d(TAG,currentPath);
             } while(mediaCursor.moveToNext());
@@ -70,4 +82,5 @@ public class MediaData {
         Log.d(TAG,arrayList.toString());
         return arrayList;
     }
+
 }

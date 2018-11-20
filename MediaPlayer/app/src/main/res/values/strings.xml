@@ -3,4 +3,9 @@
     <string name="heading">Heading</string>
     <string name="sub_heading">Sub Heading</string>
     <string name="bitmap_image">Bitmap Image</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_video_player">VideoPlayerActivity</string>
 </resources>

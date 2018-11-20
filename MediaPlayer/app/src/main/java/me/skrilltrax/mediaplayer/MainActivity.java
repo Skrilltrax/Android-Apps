@@ -1,8 +1,12 @@
 package me.skrilltrax.mediaplayer;
 
 import android.Manifest;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.Build;
+import android.net.Uri;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -10,7 +14,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.View;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -61,8 +67,26 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        adapter = new CustomAdapter(mediaInfo);
+        adapter = new CustomAdapter(mediaInfo, getApplicationContext());
         recyclerView.setAdapter(adapter);
 
+
+    }
+
+    static class MyOnClickListener implements View.OnClickListener {
+
+
+        @Override
+        public void onClick(View v) {
+            int itemPosition = recyclerView.indexOfChild(v);
+            Log.e(TAG, String.valueOf(itemPosition));
+            final Intent i = new Intent(v.getContext(),VideoPlayerActivity.class);
+            i.setData(Uri.fromFile(new File(mediaInfo.get(itemPosition).getMediaPath())));
+            v.getContext().startActivity(i);
+//            if(ImageLoader.getStatus().equals(AsyncTask.Status.RUNNING))
+//            {
+//                ImageLoader.cancel(true);
+//            }
         }
+    }
 }
