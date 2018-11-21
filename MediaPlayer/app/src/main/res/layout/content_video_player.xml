@@ -6,12 +6,10 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".VideoPlayerActivity"
-    tools:showIn="@layout/activity_video_player">
+    tools:showIn="@layout/activity_video_player"
+    android:theme="@style/AppTheme">
 
     <VideoView
-        android:id="@+id/videoView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="240dp"
-        tools:layout_editor_absoluteY="135dp" />
+        android:layout_height="match_parent" />
 </RelativeLayout>

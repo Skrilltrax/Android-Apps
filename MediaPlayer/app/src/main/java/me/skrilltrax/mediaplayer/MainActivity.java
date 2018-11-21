@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             int itemPosition = recyclerView.indexOfChild(v);
             Log.e(TAG, String.valueOf(itemPosition));
             final Intent i = new Intent(v.getContext(),VideoPlayerActivity.class);
-            i.setData(Uri.fromFile(new File(mediaInfo.get(itemPosition).getMediaPath())));
+            i.setData(Uri.fromFile(new File(mediaInfo.get(recyclerView.getChildAdapterPosition(v)).getMediaPath())));
             v.getContext().startActivity(i);
 //            if(ImageLoader.getStatus().equals(AsyncTask.Status.RUNNING))
 //            {

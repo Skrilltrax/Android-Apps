@@ -21,6 +21,8 @@
         <activity
             android:name=".VideoPlayerActivity"
             android:label="@string/title_activity_video_player"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme">
             <meta-data
