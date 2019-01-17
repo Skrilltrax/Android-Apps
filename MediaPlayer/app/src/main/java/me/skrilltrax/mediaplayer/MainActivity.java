@@ -19,7 +19,7 @@ import android.view.View;
 import java.io.File;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class  MainActivity extends AppCompatActivity {
 
     public static final String TAG = "mediainfo";
 

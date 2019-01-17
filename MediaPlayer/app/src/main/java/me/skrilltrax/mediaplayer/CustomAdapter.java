@@ -28,8 +28,8 @@ import okhttp3.OkHttpClient;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
 
-    public static final String TAG = "mediainfo";
-    public static Picasso picassoWithCache;
+    private static final String TAG = "mediainfo";
+    private static Picasso picassoWithCache;
     private ArrayList<MediaData> mediaDataArrayList;
     private File httpCacheDirectory;
     private okhttp3.Cache cache;

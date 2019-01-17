@@ -1,10 +1,13 @@
 package me.skrilltrax.intents;
 
 import android.content.Intent;
+import android.media.session.MediaSession;
+import android.media.session.PlaybackState;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -71,13 +74,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        final Intent third = new Intent(this, thirdActivity.class);
+        final MediaSession mediaSession = new MediaSession(this,"MYMEDIASESSION");
 
+        final Intent third = new Intent("com.android.music.musicservicecommand");
+        third.putExtra("command", "play");
+        sendBroadcast(third);
+        Log.e("MUSICSTART", "HERE");
+        final PlaybackState.Builder playbackState = new PlaybackState.Builder();
+        playbackState.setActions(PlaybackState.ACTION_PLAY);
+        final PlaybackState playbackState1 = playbackState.build();
         final Button thirdActivity = findViewById(R.id.thirdActivity);
         thirdActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(third);
+                sendBroadcast(third);
+                mediaSession.setPlaybackState(playbackState1);
+
+                Log.e("MUSICSTART", "HERE");
+
             }
         });
     }

@@ -2,7 +2,6 @@ package me.skrilltrax.mediaplayer;
 
 import android.content.ContentResolver;
 import android.database.Cursor;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.content.Context;
@@ -19,6 +18,7 @@ public class MediaData {
     private String mediaTitle;
     private String mediaPath;
     private String thumbnailPath;
+    private ArrayList arrayList;
 
     String[] projection = {
             MediaStore.Video.Media._ID,
@@ -65,7 +65,7 @@ public class MediaData {
         Uri mediaUri = MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
         Cursor mediaCursor = contentResolver.query(mediaUri, projection, null, null, MediaStore.Video.Media.DEFAULT_SORT_ORDER);
         Uri thumbnailUri = MediaStore.Video.Thumbnails.EXTERNAL_CONTENT_URI;
-        Cursor thumbnailCursor = contentResolver.query(thumbnailUri, thumbnailProjection, null, null, MediaStore.Video.Thumbnails.VIDEO_ID + " DESC" );
+        Cursor thumbnailCursor = contentResolver.query(thumbnailUri, thumbnailProjection, null, null, MediaStore.Video.Thumbnails.DEFAULT_SORT_ORDER );
 
 
         if((mediaCursor != null && mediaCursor.moveToFirst()) && (thumbnailCursor != null && thumbnailCursor.moveToFirst()))
@@ -74,7 +74,7 @@ public class MediaData {
             int mediaTitle = mediaCursor.getColumnIndex(MediaStore.Video.Media.TITLE);
             int mediaPath = mediaCursor.getColumnIndex(MediaStore.Video.Media.DATA);
 
-            int thumbnailId = thumbnailCursor.getColumnIndex(MediaStore.Video.Thumbnails._ID);
+            int thumbnailId = thumbnailCursor.getColumnIndex(MediaStore.Video.Media._ID);
             int thumbnailPath = thumbnailCursor.getColumnIndex(MediaStore.Video.Thumbnails.DATA);
             do {
 
