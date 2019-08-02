@@ -1,5 +1,6 @@
 package me.skrilltrax.rxjavatest
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -16,10 +17,11 @@ class MainActivity : AppCompatActivity() {
 
     val stringList: List<String> = listOf("A", "B", "C", "D", "E", "F", "G", "H", "I", "J")
 
+    @SuppressLint("CheckResult")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val observable = Observable.just("A", "B", "C", "D", "E")
+        /*val observable = Observable.just("A", "B", "C", "D", "E")
         val observer: Observer<String> = object: Observer<String> {
             override fun onComplete() {
                 Log.d("RX", "Completed")
@@ -44,7 +46,15 @@ class MainActivity : AppCompatActivity() {
             .subscribe(observer)
 
 
-        createObservable()
+        createObservable()*/
+
+        val defer = DeferClass()
+        defer.value = "IDNSJDBAOUDDFSN"
+        defer.valueObservableDefer().subscribe({
+            Log.d("RX", it)
+        }, {
+            Throwable(it)
+        })
     }
 
     fun createObservable() {
