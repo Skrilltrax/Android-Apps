@@ -4,12 +4,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import io.reactivex.Observable
+import io.reactivex.ObservableEmitter
+import io.reactivex.ObservableOnSubscribe
 import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
+import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
+
+    val stringList: List<String> = listOf("A", "B", "C", "D", "E", "F", "G", "H", "I", "J")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,5 +42,42 @@ class MainActivity : AppCompatActivity() {
             .observeOn(Schedulers.io())
             .subscribeOn(AndroidSchedulers.mainThread())
             .subscribe(observer)
+
+
+        createObservable()
+    }
+
+    fun createObservable() {
+        val observable: Observable<String> = Observable.create(ObservableOnSubscribe {emitter ->
+                try {
+                    for (alphabet in stringList) {
+                        emitter.onNext(alphabet)
+                    }
+                    emitter.onComplete()
+                } catch(e: Exception) {
+                    emitter.onError(e)
+                }
+        })
+
+        val observer: Observer<String> = object: Observer<String> {
+            override fun onComplete() {
+                Log.d("RX", "onCompleted")
+            }
+
+            override fun onSubscribe(d: Disposable) {
+                Log.d("RX", "onSubscribe")
+            }
+
+            override fun onNext(t: String) {
+                Log.d("RX", "onNext : $t")
+            }
+
+            override fun onError(e: Throwable) {
+                Log.d("RX", "onError : $e")
+            }
+
+        }
+
+        observable.subscribe(observer)
     }
 }
