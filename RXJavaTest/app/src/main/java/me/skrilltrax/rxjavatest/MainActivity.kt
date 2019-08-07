@@ -12,6 +12,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import java.lang.Exception
+import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,7 +22,51 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        /*val observable = Observable.just("A", "B", "C", "D", "E")
+
+        /*createObservable()
+        createSimple()
+        createDefer()
+        observableFrom()
+        observableInterval()
+        observableRange()*/
+        observableTimer()
+    }
+
+    @SuppressLint("CheckResult")
+    private fun observableTimer() {
+     Observable.timer(40, TimeUnit.SECONDS, Schedulers.io())
+         .subscribe({
+             Log.d("RXTIMER", "onNext: $it")
+         }, {
+             Log.d("RXTIMER", "onError ${it.stackTrace}")
+         }, {
+             Log.d("RXTIMER", "onComplete")
+         })
+    }
+
+    @SuppressLint("CheckResult")
+    private fun observableRange() {
+        Observable.range(1, 10)
+            .repeat(3)
+            .subscribe({
+                Log.d("RXRANGE", "onNext: $it")
+            }, {
+                Log.d("RXRANGE", "onError ${it.stackTrace}")
+            })
+    }
+
+    @SuppressLint("CheckResult")
+    private fun observableInterval() {
+        Observable.interval(1, TimeUnit.SECONDS, Schedulers.io())
+            .subscribe({
+                Log.d("RXINTERVAL", "onNext: $it")
+            }, {
+                Log.d("RXINTERVAL", "onError ${it.stackTrace}")
+            })
+    }
+
+    private fun createSimple() {
+        val observable = Observable.just("A", "B", "C", "D", "E")
         val observer: Observer<String> = object: Observer<String> {
             override fun onComplete() {
                 Log.d("RX", "Completed")
@@ -44,10 +89,10 @@ class MainActivity : AppCompatActivity() {
             .observeOn(Schedulers.io())
             .subscribeOn(AndroidSchedulers.mainThread())
             .subscribe(observer)
+    }
 
-
-        createObservable()*/
-
+    @SuppressLint("CheckResult")
+    fun createDefer() {
         val defer = DeferClass()
         defer.value = "IDNSJDBAOUDDFSN"
         defer.valueObservableDefer().subscribe({
@@ -85,9 +130,13 @@ class MainActivity : AppCompatActivity() {
             override fun onError(e: Throwable) {
                 Log.d("RX", "onError : $e")
             }
-
         }
 
         observable.subscribe(observer)
+    }
+
+    @SuppressLint("CheckResult")
+    fun observableFrom() {
+//        val observable: Observable<Int> = Observable.fromArray(intArrayOf(1, 2, 3, 4, 5))
     }
 }
