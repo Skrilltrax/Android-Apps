@@ -28,9 +28,24 @@ class MainActivity : AppCompatActivity() {
         createDefer()
         observableFrom()
         observableInterval()
-        observableRange()*/
-        observableTimer()
+        observableRange()
+        observableTimer()*/
+        observableBuffer()
     }
+
+    @SuppressLint("CheckResult")
+    private fun observableBuffer() {
+        Observable.just("A", "B", "C", "D", "E")
+            .buffer(2)
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe({
+                Log.d("RXBUFFER", it.toString())
+            }, {
+                Log.d("RXBUFFER", it.message ?: "error")
+            })
+    }
+
 
     @SuppressLint("CheckResult")
     private fun observableTimer() {
@@ -86,8 +101,8 @@ class MainActivity : AppCompatActivity() {
 
         }
         observable
-            .observeOn(Schedulers.io())
-            .subscribeOn(AndroidSchedulers.mainThread())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribeOn(Schedulers.io())
             .subscribe(observer)
     }
 
