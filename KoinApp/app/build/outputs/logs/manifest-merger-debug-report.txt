@@ -1,0 +1,171 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [org.koin:koin-androidx-scope:2.0.1] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/8e53c3f3cf1236804baa1cd62ef2d102/koin-androidx-scope-2.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/c2e42c1e7d40743ac82cbbbb5f5a78e7/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.0.2] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/3ac6a441db64275c34dab26f7811c80d/core-ktx-1.0.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/9fa66b5b7bcbb49c5f75fa1116157379/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [org.koin:koin-android:2.0.1] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/731d874a1a892e455e4b9289fa8c93ed/koin-android-2.0.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/91898f1a340cd849463fd55a496d50a8/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/879c33fff05d24c382baf2e90fe70744/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/6cd1c0f5a1320057c7dd676ccc76bab8/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/b833235d036e678028083a52e2ce792b/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/573dff6dd0ec8eb3d336cbbd620bf25e/vectordrawable-1.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/dbaed00c24c93c262395621f9899b6ba/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/541f21475bb697677de9651d33ed599f/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/1788802d122093a25991fc6b194dc34b/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/7e14bf8d6d8a4c2761325bc75aa35f88/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/5c72509b5c6a4e990ee28aa5f39567ba/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/9796c79e38d4fededf3fb7e84e26c64f/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/0320efb8c91108794cf8bc3a4d7f0d80/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/2fecb12ec36a641769f2c2c856ed614b/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.2] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/56a5ff3d325460593eb1b80ce1ac7353/core-1.0.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/52fc8e702f8af74cc4948b3b3382170b/versionedparcelable-1.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/4b58b8e45560e3c66fa244be7c349276/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/ad4b1a19697a99461ba12183a44e219d/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/e86cd95f873014085f758527d07873f2/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/0770151ee9004b419c5339361f55bc36/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/6a879fd0849c319adb37545d35c7095f/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/d90cd1bc66a542df0253b5658bac93bf/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/6c57f01c71a2a72f2c663b9439df16e1/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/f1ca02232fe8a7d04c38b881fd4f4824/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/55b0c1987f3e55dc1bc6328c07f68cd0/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/96f250179bd7aa12db7c552aaaec111d/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:4:5-36
+		INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:6:5-22:19
+MERGED from [org.koin:koin-androidx-scope:2.0.1] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/8e53c3f3cf1236804baa1cd62ef2d102/koin-androidx-scope-2.0.1/AndroidManifest.xml:7:5-20
+MERGED from [org.koin:koin-androidx-scope:2.0.1] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/8e53c3f3cf1236804baa1cd62ef2d102/koin-androidx-scope-2.0.1/AndroidManifest.xml:7:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/9fa66b5b7bcbb49c5f75fa1116157379/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/9fa66b5b7bcbb49c5f75fa1116157379/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.0.2] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/56a5ff3d325460593eb1b80ce1ac7353/core-1.0.2/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.2] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/56a5ff3d325460593eb1b80ce1ac7353/core-1.0.2/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/52fc8e702f8af74cc4948b3b3382170b/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/52fc8e702f8af74cc4948b3b3382170b/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.2] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/56a5ff3d325460593eb1b80ce1ac7353/core-1.0.2/AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:10:9-41
+	tools:ignore
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:14:9-48
+	android:roundIcon
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:13:9-40
+	android:name
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:7:9-30
+activity#me.skrilltrax.koinapp.MainActivity
+ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:15:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml
+MERGED from [org.koin:koin-androidx-scope:2.0.1] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/8e53c3f3cf1236804baa1cd62ef2d102/koin-androidx-scope-2.0.1/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-androidx-scope:2.0.1] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/8e53c3f3cf1236804baa1cd62ef2d102/koin-androidx-scope-2.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/c2e42c1e7d40743ac82cbbbb5f5a78e7/appcompat-1.0.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/c2e42c1e7d40743ac82cbbbb5f5a78e7/appcompat-1.0.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.0.2] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/3ac6a441db64275c34dab26f7811c80d/core-ktx-1.0.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.0.2] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/3ac6a441db64275c34dab26f7811c80d/core-ktx-1.0.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/9fa66b5b7bcbb49c5f75fa1116157379/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/9fa66b5b7bcbb49c5f75fa1116157379/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [org.koin:koin-android:2.0.1] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/731d874a1a892e455e4b9289fa8c93ed/koin-android-2.0.1/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-android:2.0.1] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/731d874a1a892e455e4b9289fa8c93ed/koin-android-2.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/91898f1a340cd849463fd55a496d50a8/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/91898f1a340cd849463fd55a496d50a8/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/879c33fff05d24c382baf2e90fe70744/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/879c33fff05d24c382baf2e90fe70744/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/6cd1c0f5a1320057c7dd676ccc76bab8/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/6cd1c0f5a1320057c7dd676ccc76bab8/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/b833235d036e678028083a52e2ce792b/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/b833235d036e678028083a52e2ce792b/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/573dff6dd0ec8eb3d336cbbd620bf25e/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/573dff6dd0ec8eb3d336cbbd620bf25e/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/dbaed00c24c93c262395621f9899b6ba/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/dbaed00c24c93c262395621f9899b6ba/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/541f21475bb697677de9651d33ed599f/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/541f21475bb697677de9651d33ed599f/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/1788802d122093a25991fc6b194dc34b/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/1788802d122093a25991fc6b194dc34b/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/7e14bf8d6d8a4c2761325bc75aa35f88/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/7e14bf8d6d8a4c2761325bc75aa35f88/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/5c72509b5c6a4e990ee28aa5f39567ba/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/5c72509b5c6a4e990ee28aa5f39567ba/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/9796c79e38d4fededf3fb7e84e26c64f/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/9796c79e38d4fededf3fb7e84e26c64f/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/0320efb8c91108794cf8bc3a4d7f0d80/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/0320efb8c91108794cf8bc3a4d7f0d80/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/2fecb12ec36a641769f2c2c856ed614b/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/2fecb12ec36a641769f2c2c856ed614b/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.2] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/56a5ff3d325460593eb1b80ce1ac7353/core-1.0.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.2] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/56a5ff3d325460593eb1b80ce1ac7353/core-1.0.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/52fc8e702f8af74cc4948b3b3382170b/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/52fc8e702f8af74cc4948b3b3382170b/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/4b58b8e45560e3c66fa244be7c349276/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/4b58b8e45560e3c66fa244be7c349276/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/ad4b1a19697a99461ba12183a44e219d/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/ad4b1a19697a99461ba12183a44e219d/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/e86cd95f873014085f758527d07873f2/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/e86cd95f873014085f758527d07873f2/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/0770151ee9004b419c5339361f55bc36/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/0770151ee9004b419c5339361f55bc36/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/6a879fd0849c319adb37545d35c7095f/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/6a879fd0849c319adb37545d35c7095f/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/d90cd1bc66a542df0253b5658bac93bf/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/d90cd1bc66a542df0253b5658bac93bf/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/6c57f01c71a2a72f2c663b9439df16e1/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/6c57f01c71a2a72f2c663b9439df16e1/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/f1ca02232fe8a7d04c38b881fd4f4824/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/f1ca02232fe8a7d04c38b881fd4f4824/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/55b0c1987f3e55dc1bc6328c07f68cd0/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/55b0c1987f3e55dc1bc6328c07f68cd0/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/96f250179bd7aa12db7c552aaaec111d/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/skrilltrax/.gradle/caches/transforms-2/files-2.1/96f250179bd7aa12db7c552aaaec111d/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/skrilltrax/Projects/Android/Android-Apps/KoinApp/app/src/main/AndroidManifest.xml
