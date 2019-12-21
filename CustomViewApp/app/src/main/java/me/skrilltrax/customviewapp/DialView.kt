@@ -35,9 +35,9 @@ private const val RADIUS_OFFSET_INDICATOR = -35
 
 
 class DialView @JvmOverloads constructor(
-    context: Context,
-    attrs: AttributeSet,
-    defStyleAttr: Int = 0
+        context: Context,
+        attrs: AttributeSet,
+        defStyleAttr: Int = 0
 ): View(context, attrs, defStyleAttr) {
 
     private var radius = 0.0f                   // Radius of the circle.
@@ -64,62 +64,25 @@ class DialView @JvmOverloads constructor(
         flag = 1;
     }
 
-    private fun PointF.computeXYForSpeed(pos: FanSpeed, radius: Float, useAngle: Float?) {
-        if (useAngle != null) {
-            x = changeX(angle);
-            y = changeY(angle);
-            return
-        }
-        startAngle = (Math.PI * (9 / 8.0)).toFloat()
-        angle = (startAngle + pos.ordinal * (Math.PI / 4)).toFloat()
-        x = changeX(angle);
-        y = changeY(angle);
-    }
-
-    private fun changeX(angle: Float) : Float {
-        return (radius * cos(angle)) + width / 2;
-    }
-
-    private fun changeY(angle: Float) : Float {
-        return (radius * sin(angle)) + height / 2;
+    private fun PointF.computeXYForSpeed(pos: FanSpeed, radius: Float) {
+        // Angles are in radians.
+        val startAngle = Math.PI * (9 / 8.0)
+        val angle = startAngle + pos.ordinal * (Math.PI / 4)
+        x = (radius * cos(angle)).toFloat() + width / 2
+        y = (radius * sin(angle)).toFloat() + height / 2
     }
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         paint.color = if (fanSpeed == FanSpeed.OFF) Color.GRAY else Color.GREEN
         canvas.drawCircle((width / 2.0).toFloat(), (height / 2.0).toFloat(), radius, paint)
-
-        if (flag == 0) {
-            computeLabel(canvas)
-            val markerRadius = radius + RADIUS_OFFSET_INDICATOR
-            fanSpeed = fanSpeed.next()
-            pointPosition.computeXYForSpeed(fanSpeed, markerRadius, null)
-            flag = 1;
-        }
-
+        val markerRadius = radius + RADIUS_OFFSET_INDICATOR
+        pointPosition.computeXYForSpeed(fanSpeed, markerRadius)
         paint.color = Color.BLACK
         canvas.drawCircle(pointPosition.x, pointPosition.y, radius/12, paint)
-    }
-
-    private fun computeKnob() {
-        val markerRadius = radius + RADIUS_OFFSET_INDICATOR
-        val oldAngle = angle;
-        fanSpeed = fanSpeed.next()
-        pointPosition.computeXYForSpeed(fanSpeed, markerRadius, null)
-        fanSpeed = fanSpeed.prev()
-        ValueAnimator.ofFloat(oldAngle, angle).apply {
-            duration = 500
-            addUpdateListener {
-                pointPosition.computeXYForSpeed(fanSpeed, radius, animatedValue as Float)
-                invalidate()
-            }
-        }
-    }
-
-    private fun computeLabel(canvas: Canvas) {
         val labelRadius = radius + RADIUS_OFFSET_LABEL
         for (i in FanSpeed.values()) {
-            pointPosition.computeXYForSpeed(i, labelRadius, null)
+            pointPosition.computeXYForSpeed(i, labelRadius)
             val label = resources.getString(i.label)
             canvas.drawText(label, pointPosition.x, pointPosition.y, paint)
         }
@@ -127,9 +90,8 @@ class DialView @JvmOverloads constructor(
 
     override fun performClick(): Boolean {
         if (super.performClick()) return true
-        computeKnob()
         contentDescription = resources.getString(fanSpeed.label)
-
+        fanSpeed = fanSpeed.next()
         invalidate()
         return true
     }
